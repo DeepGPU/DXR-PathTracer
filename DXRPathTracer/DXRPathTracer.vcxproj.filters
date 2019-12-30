@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\UTIL">
+      <UniqueIdentifier>{a0887646-622d-4c9c-9342-aa74b3e40ca0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\D3D12Screen">
+      <UniqueIdentifier>{02d25e94-3b50-4ffe-b5f7-b18c26730757}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\D3D12Screen\HLSL">
+      <UniqueIdentifier>{f9eff60c-4037-4cc5-bb69-85e7528b57cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\IGRT Framework">
+      <UniqueIdentifier>{91a5f396-30ce-4a8d-867d-b15cbe75c575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\IGRT Framework\Mesh">
+      <UniqueIdentifier>{61f64b26-cb34-4bed-85c6-62ce0ab15855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\DXRPathTracer">
+      <UniqueIdentifier>{bf5a7f8c-7b0f-45c6-aaae-8a2a592f1211}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\DXRPathTracer\HLSL">
+      <UniqueIdentifier>{66181d2e-2e7b-4a1f-b04e-4ca738dc5138}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Array.h">
+      <Filter>소스 파일\UTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="basic_math.h">
+      <Filter>소스 파일\UTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="basic_types.h">
+      <Filter>소스 파일\UTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="dxHelpers.h">
+      <Filter>소스 파일\UTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>소스 파일\UTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>소스 파일\UTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>소스 파일\UTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="Error.h">
+      <Filter>소스 파일\UTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="DXRPathTracer.h">
+      <Filter>소스 파일\DXRPathTracer</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D12Screen.h">
+      <Filter>소스 파일\D3D12Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="IGRTCommon.h">
+      <Filter>소스 파일\IGRT Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="IGRTScreen.h">
+      <Filter>소스 파일\IGRT Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="IGRTTracer.h">
+      <Filter>소스 파일\IGRT Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>소스 파일\IGRT Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>소스 파일\IGRT Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneLoader.h">
+      <Filter>소스 파일\IGRT Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>소스 파일\IGRT Framework\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="generateMesh.h">
+      <Filter>소스 파일\IGRT Framework\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="loadMesh.h">
+      <Filter>소스 파일\IGRT Framework\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>소스 파일\IGRT Framework</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dxHelpers.cpp">
+      <Filter>소스 파일\UTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>소스 파일\UTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="DXRPathTracer.cpp">
+      <Filter>소스 파일\DXRPathTracer</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일\DXRPathTracer</Filter>
+    </ClCompile>
+    <ClCompile Include="D3D12Screen.cpp">
+      <Filter>소스 파일\D3D12Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneLoader.cpp">
+      <Filter>소스 파일\IGRT Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="generateMesh.cpp">
+      <Filter>소스 파일\IGRT Framework\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="loadMesh.cpp">
+      <Filter>소스 파일\IGRT Framework\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>소스 파일\IGRT Framework</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sampling.hlsli">
+      <Filter>소스 파일\DXRPathTracer\HLSL</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="DXRShader.hlsl">
+      <Filter>소스 파일\DXRPathTracer\HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="D3D12Screen.hlsl">
+      <Filter>소스 파일\D3D12Screen\HLSL</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
