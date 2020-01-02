@@ -444,7 +444,8 @@ void closestHitGlass(inout RayPayload payload, in BuiltInTriangleIntersectionAtt
 [shader("miss")]
 void missRay(inout RayPayload payload)
 {
-	payload.radiance = 0.1;
+	//payload.radiance = 0.1;
+	payload.radiance = backgroundLight;
 	payload.rayDepth = maxPathLength;
 }
 

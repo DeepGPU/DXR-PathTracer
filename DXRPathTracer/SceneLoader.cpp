@@ -83,78 +83,11 @@ Scene* SceneLoader::push_testScene1()
 	scene->objArr[1].translation = float3(0.0f, 0.5f, 0.0f);
 	scene->objArr[2].translation = float3(-20.0f, 17.f, 0.0f);
 	
-	/*scene->objArr[0].material.albedo = float3(0.7f, 0.3f, 0.4f);
-	
-	scene->objArr[1].material.albedo = float3(0.1f);
-	scene->objArr[1].material.type = Plastic;
-	scene->objArr[1].material.reflectivity = 0.01f;
-	scene->objArr[1].material.roughness = 0.2f;
-	scene->objArr[1].translation = float3(0.0f, 0.5f, 0.0f);
-	
-	scene->objArr[2].translation = float3(-20.0f, 17.f, 0.0f);
-	scene->objArr[2].lightIntensity = 200.0f;*/
-	
 	computeModelMatrices(scene);
 
 	return scene;
 }
 
-//Scene* SceneLoader::push_testScene2()
-//{
-//	Scene* scene = new Scene;
-//	sceneArr.push_back(scene);
-//
-//	Mesh groundM	= generateRectangleMesh(float3(0.0, -0.4, 0.0), float3(40.0, 0.0, 40.0), FaceDir::up);
-//	Mesh tableM		= generateBoxMesh(float3(-5.0, -0.38, -4.0), float3(5.0, -0.01, 3.0));
-//	Mesh sphereM	= generateSphereMesh(float3(0,1,0), 1.0f);
-//	Mesh puzzleM	= loadMeshFromOBJFile("data/mesh/burrPuzzle.obj", true);
-//
-//	initializeGeometryFromMeshes(scene, { &groundM, &tableM, &sphereM, &puzzleM });
-//	enum SceneObjectId {
-//		ground, table, light, instance1, instance2, numObjs
-//	};
-//
-//	Array<SceneObject> objArr(numObjs);
-//	objArr[ground	] = scene->objArr[0];
-//	objArr[ground	].scale = 1.0f;
-//	objArr[ground	].translation = float3(0.0, -0.04, 0.0);
-//	objArr[ground	].material.albedo = float3(0.75, 0.6585, 0.5582);
-//	
-//	objArr[table	] = scene->objArr[1];
-//	objArr[table	].scale = 1.0f;
-//	objArr[table	].translation = float3(0.0, -0.02, 0.0);
-//	objArr[table	].material.albedo = float3(0.87, 0.7785, 0.6782);
-//
-//	objArr[light	] = scene->objArr[2];
-//	objArr[light	].scale = 2.0f;
-//	objArr[light	].lightIntensity = 200.0f;
-//	objArr[light	].translation = float3(-20, 17, 0);
-//	objArr[light	].material.albedo = float3(0);
-//
-//	objArr[instance1] = scene->objArr[3];
-//	objArr[instance1].translation = float3(-1.2, 1.0, -2.3);
-//	objArr[instance1].rotation = getRotationAsQuternion({0,1,0}, 30.0f);
-//	objArr[instance1].scale = 18.0f;
-//
-//	objArr[instance2] = scene->objArr[3];
-//	objArr[instance2].translation = float3(1.2, 1.0, -2.3);
-//	objArr[instance2].rotation = getRotationAsQuternion({0,1,0}, 30.0f);
-//	objArr[instance2].scale = 18.0f;
-//
-//	objArr[instance1].material.roughness = 0.2f;
-//	objArr[instance1].material.type = Plastic;
-//	objArr[instance1].material.reflectivity = 0.5f;
-//	objArr[instance1].material.albedo = float3(0.7175, 0.17, 0.005);
-//
-//	objArr[instance2].material.roughness = 0.2f;
-//	objArr[instance2].material.type = Plastic;
-//	objArr[instance2].material.reflectivity = 0.5f;
-//	objArr[instance2].material.albedo = float3(0.7175, 0.17, 0.005);
-//	
-//	objArr.swap(scene->objArr);
-//	computeModelMatrices(scene);
-//	return scene;
-//}
 
 Scene* SceneLoader::push_hyperionTestScene()
 {
@@ -164,10 +97,9 @@ Scene* SceneLoader::push_hyperionTestScene()
 	Mesh groundM	= generateRectangleMesh(float3(0.0, -0.4, 0.0), float3(40.0, 0.0, 40.0), FaceDir::up);
 	Mesh tableM		= generateBoxMesh(float3(-5.0, -0.38, -4.0), float3(5.0, -0.01, 3.0));
 	Mesh sphereM	= generateSphereMesh(float3(0,1,0), 1.0f);
-	Mesh ringM		= loadMeshFromOBJFile("data/mesh/ring.obj", true);
-	Mesh golfBallM	= loadMeshFromOBJFile("data/mesh/golfball.obj", true);
-	//Mesh woodM		= loadMeshFromOBJFile("data/mesh/hippo.obj", true);
-	Mesh puzzleM	= loadMeshFromOBJFile("data/mesh/burrPuzzle.obj", true);
+	Mesh ringM		= loadMeshFromOBJFile("../data/mesh/ring.obj", true);
+	Mesh golfBallM	= loadMeshFromOBJFile("../data/mesh/golfball.obj", true);
+	Mesh puzzleM	= loadMeshFromOBJFile("../data/mesh/burrPuzzle.obj", true);
 	initializeGeometryFromMeshes(scene, { &groundM, &tableM, &sphereM, &ringM, &golfBallM, &puzzleM });
 
 	enum SceneObjectId {
@@ -224,11 +156,6 @@ Scene* SceneLoader::push_hyperionTestScene()
 	objArr[wood    ].translation = float3(-0.2, 1.0, -2.3);
 	objArr[wood    ].rotation = getRotationAsQuternion({0,1,0}, 30.0f);
 	objArr[wood    ].scale = 20.0f;
-	
-	// hippo.obj
-	/*objArr[wood    ].translation = float3(0.3, 0.0, -2.5);
-	objArr[wood    ].rotation = getRotationAsQuternion({0,1,0}, 100.0f);
-	objArr[wood    ].scale = 0.1f;*/
 
 	objArr.swap(scene->objArr);
 
@@ -251,6 +178,10 @@ Scene* SceneLoader::push_hyperionTestScene()
 	mtlArr[ringMtl    ].albedo = float3(0.95, 0.93, 0.88);
 
 	mtlArr[lightMtl   ].emittance = float3(200.0f);
+	mtlArr[bouncyMtl  ].emittance = 10.0f * float3(0.9828262, 0.180144, 0.0780565);
+	mtlArr[marble1Mtl ].emittance = 10.0f * float3(0.276, 0.344, 0.2233);
+	mtlArr[marble2Mtl ].emittance = 10.0f * float3(0.2549, 0.3537, 0.11926);
+	//mtlArr[glassMtl	  ].emittance = float3(0.01f);
 
 	mtlArr[pingpongMtl].type = Metal;
 	mtlArr[pingpongMtl].roughness = 0.2f;
