@@ -6,7 +6,7 @@ A basic path tracer implementing the forward BRDF sampling using DirectX Ray Tra
 Features
 --------
 
-- Useful DX12/DXR helpers that reduce your graphic code fairly
+- Useful DX12/DXR helpers that reduce your graphic code efficiently
 - Support various hierarchies for acceleration structure building
 - Forward BRDF sampling (GGX/glass) for light tranport
 - Every mesh can be a light
