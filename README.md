@@ -15,7 +15,7 @@ Features
 DXR Acceleration Structure
 --------------------------
 <br>
-<br>
+
 ![diagram](images/diagram.png)
 <br>
 <br>
