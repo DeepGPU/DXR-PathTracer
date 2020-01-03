@@ -178,17 +178,16 @@ Scene* SceneLoader::push_hyperionTestScene()
 	mtlArr[ringMtl    ].albedo = float3(0.95, 0.93, 0.88);
 
 
-	//mtlArr[lightMtl   ].emittance = float3(200.0f);
+	mtlArr[lightMtl   ].emittance = float3(200.0f);
 	//mtlArr[woodMtl    ].emittance = 5.0f * float3(0.3992, 0.21951971, 0.10871);
 	//mtlArr[woodMtl    ].albedo = float3(1);
-	//mtlArr[bouncyMtl  ].emittance = 50.0f * float3(0.9828262, 0.180144, 0.0780565);
-	//mtlArr[marble1Mtl ].emittance = 50.0f * float3(0.276, 0.344, 0.2233);
-	//mtlArr[marble2Mtl ].emittance = 50.0f * float3(0.2549, 0.3537, 0.11926);
-	//mtlArr[glassMtl	  ].emittance = float3(0.01f);
+	mtlArr[bouncyMtl  ].emittance = 10.0f * float3(0.9828262, 0.180144, 0.0780565);
+	mtlArr[marble1Mtl ].emittance = 10.0f * float3(0.276, 0.344, 0.2233);
+	mtlArr[marble2Mtl ].emittance = 10.0f * float3(0.2549, 0.3537, 0.11926);
 
-	scene->objArr[marble2 ].scale = 0.1f;
+	/*scene->objArr[marble2 ].scale = 0.1f;
 	scene->objArr[marble2 ].translation = float3(3.2, 0.7, 0.0);
-	mtlArr[marble2Mtl ].emittance = float3(100.0f);
+	mtlArr[marble2Mtl ].emittance = float3(100.0f);*/
 
 
 	mtlArr[pingpongMtl].type = Metal;

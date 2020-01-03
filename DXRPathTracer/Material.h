@@ -1,12 +1,6 @@
 #pragma once
 #include "basic_types.h"
 
-//enum class MaterialType : uint
-//{
-//	Lambertian = 0,
-//	//Phong
-//	//Disney
-//};
 
 static const int Lambertian = 0;
 static const int Metal = 1;
