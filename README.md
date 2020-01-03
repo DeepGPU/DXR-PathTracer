@@ -23,6 +23,15 @@ An acceleration structure(AS) is a tree-style data structure representing geomet
 
 
 
+Build Requirements
+------------------
+
+- Windows 10 version 1809 (10.0.17763.0)
+- Visual Studio 2017
+- A GPU/driver that supports DXR
+
+The repository contains a Visual Studio 2017 project and solution file that's ready to build on Windows 10 using SDK 10.0.17763.0. And this project do not support DXR fallback layer a DXR supporting GPU is necessary.
+
 
 Images
 ------
