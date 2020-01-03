@@ -37,6 +37,6 @@ Disney Hyperion's table test scene (https://www.disneyanimation.com/technology/i
 
 ToDo List
 ---------
--Subsurface / Volume scattering
--Denoising
--Support Vulkan raytracing / nVidia OptiX API
+- Subsurface / Volume scattering
+- Denoising
+- Support Vulkan raytracing / nVidia OptiX API
