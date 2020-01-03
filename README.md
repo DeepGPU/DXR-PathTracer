@@ -30,7 +30,7 @@ Build Requirements
 - Visual Studio 2017
 - A GPU/driver that supports DXR
 
-The repository contains a Visual Studio 2017 project and solution file that's ready to build on Windows 10 using SDK 10.0.17763.0. And this project do not support DXR fallback layer a DXR supporting GPU is necessary.
+The repository contains a Visual Studio 2017 project and solution file that's ready to build on Windows 10 using SDK 10.0.17763.0. Also, since this project do not support DXR fallback layer, a DXR supporting GPU is necessary.
 
 
 Images
