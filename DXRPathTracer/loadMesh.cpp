@@ -7,7 +7,7 @@
 class compTynyIdx
 {
 public:
-	bool operator() (const tinyobj::index_t& a, const tinyobj::index_t& b) 
+	bool operator() (const tinyobj::index_t& a, const tinyobj::index_t& b) const
 	{
 		return
 			(a.vertex_index != b.vertex_index) ? (a.vertex_index < b.vertex_index) :
